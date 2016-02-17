@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="#fefefe"
     tools:context="educybersecurity.hawaii.maui.securityquizzer.SplashActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:keepScreenOn="true"
-        android:text="@string/dummy_content"
+        android:text="Placeholder"
         android:textColor="#33b5e5"
         android:textSize="50sp"
         android:textStyle="bold" />
@@ -36,15 +36,12 @@
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
-            <Button
-                android:id="@+id/dummy_button"
-                style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button" />
-
         </LinearLayout>
+
+        <ImageView id="@+id/splashscreen" android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/logo"
+            android:layout_gravity="center" />
     </FrameLayout>
 
 </FrameLayout>
