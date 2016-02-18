@@ -1,11 +1,13 @@
 package educybersecurity.hawaii.maui.securityquizzer;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+//import java.lang.Thread;
 
 /**
  * A full-screen splash activity
@@ -16,6 +18,7 @@ public class SplashActivity extends AppCompatActivity {
      * and a change of the status and navigation bar.
      */
     private static final int UI_ANIMATION_DELAY = 300;
+    private static final int SPLASH_DELAY=1000;
     private final Handler mHideHandler = new Handler();
     private View mContentView;
     private final Runnable mHidePart2Runnable = new Runnable() {
@@ -59,14 +62,21 @@ public class SplashActivity extends AppCompatActivity {
         // Trigger the initial hide()
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postAtFrontOfQueue(mHideRunnable);
+        //CHECK IF FIRST TIME RUNNING
         //SPLASH DELAY
-
-	//CHECK IF FIRST TIME RUNNING
-
-	//IF FIRST TIME, OPEN TUTORIAL-START ACTIVITY
-        //ELSE OPEN ENTRY ACTIVITY
-
-        //FINISH
+        /*try{Thread.sleep(SPLASH_DELAY);} //bad idea -- no sleeping the UI thread
+        catch(InterruptedException e){e.printStackTrace();}*/
+        mHideHandler.postDelayed(new Runnable(){
+            @Override
+            public void run(){
+                //IF FIRST TIME, OPEN TUTORIAL-START ACTIVITY
+                //ELSE OPEN ENTRY ACTIVITY
+                Intent activity=new Intent(SplashActivity.this,hasRun?MainEntryActivity.class:TutorialEntryActivity.class);
+                SplashActivity.this.startActivity(activity);
+                //FINISH
+                finish();
+            }
+        },SPLASH_DELAY);
     }
 
     private void hide() {
