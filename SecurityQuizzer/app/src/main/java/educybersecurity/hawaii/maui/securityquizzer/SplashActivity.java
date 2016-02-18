@@ -60,7 +60,12 @@ public class SplashActivity extends AppCompatActivity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postAtFrontOfQueue(mHideRunnable);
         //SPLASH DELAY
-        //OPEN ENTRY ACTIVITY
+
+	//CHECK IF FIRST TIME RUNNING
+
+	//IF FIRST TIME, OPEN TUTORIAL-START ACTIVITY
+        //ELSE OPEN ENTRY ACTIVITY
+
         //FINISH
     }
 
