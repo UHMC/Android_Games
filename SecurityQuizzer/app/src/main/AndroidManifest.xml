@@ -22,6 +22,10 @@
         <activity
             android:name=".TutorialEntryActivity"
             android:label="@string/title_activity_tutorial_entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainEntryActivity"
+            android:label="@string/title_activity_main_entry"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
