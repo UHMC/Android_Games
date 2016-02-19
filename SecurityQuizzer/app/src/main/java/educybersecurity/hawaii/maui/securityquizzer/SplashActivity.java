@@ -4,14 +4,12 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
-//import java.lang.Thread;
 
 /**
  * A full-screen splash activity
@@ -74,7 +72,7 @@ public class SplashActivity extends AppCompatActivity {
         catch(InterruptedException e){e.printStackTrace();}*/
 
         SharedPreferences config = getPreferences(MODE_PRIVATE);
-        boolean hasRun = config.getBoolean("hasRun",false);
+        final boolean hasRun = config.getBoolean("hasRun",false);
 
         // First time run shows preference file as false, running this block
         if(hasRun == false) {
@@ -100,8 +98,11 @@ public class SplashActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
         }
-        /*mHideHandler.postDelayed(new Runnable(){
 
+        //Depending on whether app has been run before,
+        //launch either the tutorial or the main entry activity,
+        //then remove splash screen activity from the stack.
+        mHideHandler.postDelayed(new Runnable(){
             @Override
             public void run(){
                 //IF FIRST TIME, OPEN TUTORIAL-START ACTIVITY
@@ -112,18 +113,6 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
             }
         },SPLASH_DELAY);
-
-
-        try{Thread.sleep(2000);}
-        catch(InterruptedException e){}
-        finish(); */
-
-        mHideHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                finish();
-            }
-        }, 2000);
     }
 
     private void hide() {
