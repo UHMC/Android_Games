@@ -9,7 +9,43 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity"
-    tools:showIn="@layout/activity_main_entry">
+    tools:context="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Study"
+        android:id="@+id/study"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/quiz"
+        android:layout_alignStart="@+id/quiz"
+        android:layout_alignRight="@+id/quiz"
+        android:layout_alignEnd="@+id/quiz"
+        android:onClick="launch"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Take quiz"
+        android:id="@+id/quiz"
+        android:layout_above="@+id/study"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:onClick="launch"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Select Quiz"
+        android:layout_below="@+id/study"
+        android:layout_marginTop="60dp"
+        android:layout_alignLeft="@+id/study"
+        android:layout_alignStart="@+id/study"
+        android:layout_alignRight="@+id/study"
+        android:layout_alignEnd="@+id/study"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:onClick="launch"
+        android:id="@+id/selectQuiz" />
 
 </RelativeLayout>
