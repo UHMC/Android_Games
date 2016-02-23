@@ -1,5 +1,6 @@
 package educybersecurity.hawaii.maui.securityquizzer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -34,6 +35,8 @@ public class MainEntryActivity extends AppCompatActivity {
             case R.id.quiz:
                 // placeholder for quiz activity
                 Log.e("test", "This would run the quiz activity");
+                Intent activity=new Intent(MainEntryActivity.this,QuizActivity.class);
+                MainEntryActivity.this.startActivity(activity);
                 break;
             case R.id.study:
                 // placeholder for study activity
