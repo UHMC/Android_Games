@@ -15,34 +15,37 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:text="Study"
-        android:id="@+id/button"
+        android:id="@+id/study"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:layout_alignLeft="@+id/quiz"
+        android:layout_alignStart="@+id/quiz"
+        android:layout_alignRight="@+id/quiz"
+        android:layout_alignEnd="@+id/quiz"
+        android:onClick="launch"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:text="Take quiz"
-        android:id="@+id/button2"
-        android:layout_above="@+id/button"
+        android:id="@+id/quiz"
+        android:layout_above="@+id/study"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp" />
+        android:layout_marginBottom="60dp"
+        android:onClick="launch"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:text="Select Quiz"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/study"
         android:layout_marginTop="60dp"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
+        android:layout_alignLeft="@+id/study"
+        android:layout_alignStart="@+id/study"
+        android:layout_alignRight="@+id/study"
+        android:layout_alignEnd="@+id/study"
         android:layout_alignParentEnd="false"
-        android:layout_alignParentStart="false" />
+        android:layout_alignParentStart="false"
+        android:onClick="launch"
+        android:id="@+id/selectQuiz" />
 
 </RelativeLayout>
