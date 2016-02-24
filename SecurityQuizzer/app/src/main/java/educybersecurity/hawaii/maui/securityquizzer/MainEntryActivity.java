@@ -2,15 +2,11 @@ package educybersecurity.hawaii.maui.securityquizzer;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.util.Log;
+import android.view.View;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainEntryActivity extends AppCompatActivity {
@@ -30,21 +26,25 @@ public class MainEntryActivity extends AppCompatActivity {
     }
 
     public void launch(View view) {
-
+        Intent activity = null;
         switch (view.getId()) {
             case R.id.quiz:
                 // placeholder for quiz activity
                 Log.e("test", "This would run the quiz activity");
-                Intent activity=new Intent(MainEntryActivity.this,QuizActivity.class);
-                MainEntryActivity.this.startActivity(activity);
+                activity = new Intent(this, Question1.class);
                 break;
             case R.id.study:
                 // placeholder for study activity
                 Log.e("test", "This would run the study activity");
+
+                //activity=new Intent(this,StudyActivity.class);
                 break;
 
         }
+        try {
+            startActivity(activity);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
-
-
