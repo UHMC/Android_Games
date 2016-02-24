@@ -44,6 +44,42 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity" />
         </activity>
+        <activity
+            android:name=".Question2"
+            android:label="@string/title_activity_question2"
+            android:parentActivityName=".Question1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.Question1" />
+        </activity>
+        <activity
+            android:name=".Question3"
+            android:label="@string/title_activity_question3"
+            android:parentActivityName=".Question2"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.Question2" />
+        </activity>
+        <activity
+            android:name=".Question4"
+            android:label="@string/title_activity_question4"
+            android:parentActivityName=".Question3"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.Question3" />
+        </activity>
+        <activity
+            android:name=".Question5"
+            android:label="@string/title_activity_question5"
+            android:parentActivityName=".Question4"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.Question4" />
+        </activity>
     </application>
 
 </manifest>
