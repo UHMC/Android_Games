@@ -30,24 +30,20 @@ public class MainEntryActivity extends AppCompatActivity {
     }
 
     public void launch(View view) {
-
+        Intent activity=null;
         switch (view.getId()) {
             case R.id.quiz:
                 // placeholder for quiz activity
                 Log.e("test", "This would run the quiz activity");
-                Intent activity=new Intent(MainEntryActivity.this,QuizActivity.class);
-                MainEntryActivity.this.startActivity(activity);
+                activity=new Intent(this,QuizActivity.class);
                 break;
             case R.id.study:
                 // placeholder for study activity
                 Log.e("test", "This would run the study activity");
-                break;
-            case R.id.selectQuiz:
-                // placeholder for select quiz activity
-                Log.e("test", "This would run the select quiz activity");
+                //activity=new Intent(this,StudyActivity.class);
                 break;
         }
+        try{startActivity(activity);}
+        catch(Exception e){e.printStackTrace();}
     }
 }
-
-
