@@ -7,15 +7,12 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 
-import com.google.android.gms.common.api.GoogleApiClient;
-
 public class MainEntryActivity extends AppCompatActivity {
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
-    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +33,8 @@ public class MainEntryActivity extends AppCompatActivity {
             case R.id.study:
                 // placeholder for study activity
                 Log.e("test", "This would run the study activity");
-
                 //activity=new Intent(this,StudyActivity.class);
                 break;
-
         }
         try {
             startActivity(activity);
