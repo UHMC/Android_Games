@@ -33,19 +33,4 @@
         android:layout_marginBottom="60dp"
         android:onClick="launch"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:text="Select Quiz"
-        android:layout_below="@+id/study"
-        android:layout_marginTop="60dp"
-        android:layout_alignLeft="@+id/study"
-        android:layout_alignStart="@+id/study"
-        android:layout_alignRight="@+id/study"
-        android:layout_alignEnd="@+id/study"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentStart="false"
-        android:onClick="launch"
-        android:id="@+id/selectQuiz" />
-
 </RelativeLayout>

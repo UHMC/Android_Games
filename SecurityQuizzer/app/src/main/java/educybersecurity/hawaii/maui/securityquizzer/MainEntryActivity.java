@@ -42,10 +42,7 @@ public class MainEntryActivity extends AppCompatActivity {
                 // placeholder for study activity
                 Log.e("test", "This would run the study activity");
                 break;
-            case R.id.selectQuiz:
-                // placeholder for select quiz activity
-                Log.e("test", "This would run the select quiz activity");
-                break;
+
         }
     }
 }

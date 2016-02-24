@@ -36,8 +36,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".QuizActivity"
-            android:label="@string/title_activity_quiz"
+            android:name=".Question1"
+            android:label="@string/title_activity_question1"
             android:parentActivityName=".MainEntryActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

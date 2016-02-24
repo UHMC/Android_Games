@@ -5,5 +5,6 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_main_entry">MainEntryActivity</string>
     <string name="title_activity_quiz">QuizActivity</string>
+    <string name="title_activity_question1">Question1</string>
 
 </resources>
