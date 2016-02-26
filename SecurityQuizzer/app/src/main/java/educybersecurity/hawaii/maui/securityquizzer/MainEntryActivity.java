@@ -42,29 +42,7 @@ public class MainEntryActivity extends AppCompatActivity {
             case R.id.study:
                 // placeholder for study activity
                 Log.e("test", "This would run the study activity");
-
-
-                FileWriter fw;
-                FileReader fr;
-                File file = new File(getFilesDir().getPath().toString()+"/score.txt");
-                char[] score;
-                score = new char[5];
-                try {
-                    file.createNewFile();
-                    fw = new FileWriter(file, true);
-                    fw.write("00000");
-                    fw.flush();
-                    fw.close();
-
-                    fr = new FileReader(file);
-                    fr.read(score);
-                    String scoreString = new String(score);
-                    Log.e("test", scoreString);
-                    fr.close();
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+                this.startActivity(new Intent(this,TutorialEntryActivity.class));
           /*      String FILENAME = "test_file";
                 String string = "00000";
 
@@ -80,8 +58,6 @@ public class MainEntryActivity extends AppCompatActivity {
                 catch (Exception e){
                 e.printStackTrace();
             }*/
-
-                break;
         }
         try {
             startActivity(activity);
