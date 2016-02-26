@@ -24,6 +24,7 @@ public class Question1 extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Question 1");
 
         // This is what would be Setup(), it creates a file and sets it to 00000
         FileWriter fw;

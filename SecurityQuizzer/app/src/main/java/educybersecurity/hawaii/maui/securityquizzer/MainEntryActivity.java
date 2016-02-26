@@ -28,6 +28,7 @@ public class MainEntryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_entry);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Security Quizzer!");
     }
 
     public void launch(View view) {

@@ -21,6 +21,7 @@ public class Question3 extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Question 3");
     }
     public void incorrect(View unused){
         //store value
