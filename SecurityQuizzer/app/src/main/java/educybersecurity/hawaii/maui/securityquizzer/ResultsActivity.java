@@ -1,19 +1,12 @@
 package educybersecurity.hawaii.maui.securityquizzer;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -28,11 +21,11 @@ public class ResultsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // Create array of TextViews
         TextView[] questionResult = new TextView[5];
-        questionResult[0] = (TextView) findViewById(R.id.textView2);
-        questionResult[1] = (TextView) findViewById(R.id.textView3);
-        questionResult[2] = (TextView) findViewById(R.id.textView4);
-        questionResult[3] = (TextView) findViewById(R.id.textView5);
-        questionResult[4] = (TextView) findViewById(R.id.textView6);
+        questionResult[0] = (TextView) findViewById(R.id.textView1);
+        questionResult[1] = (TextView) findViewById(R.id.textView2);
+        questionResult[2] = (TextView) findViewById(R.id.textView3);
+        questionResult[3] = (TextView) findViewById(R.id.textView4);
+        questionResult[4] = (TextView) findViewById(R.id.textView5);
 
         // Necessary stuff for I/O-ing score.txt
         File file = new File(getFilesDir().getPath().toString() + "/score.txt");
