@@ -1,9 +1,16 @@
 package educybersecurity.hawaii.maui.securityquizzer;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 
 public class Question1 extends AppCompatActivity {
 
