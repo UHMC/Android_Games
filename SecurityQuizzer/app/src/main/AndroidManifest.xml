@@ -80,6 +80,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="educybersecurity.hawaii.maui.securityquizzer.Question4" />
         </activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:label="@string/title_activity_results"
+            android:parentActivityName=".MainEntryActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity" />
+        </activity>
     </application>
 
 </manifest>

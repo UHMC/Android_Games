@@ -13,7 +13,7 @@ import java.io.FileWriter;
 
 public class Question5 extends AppCompatActivity {
     private final static short WHICH_QUESTION=5;
-    private final static Class NEXT_ACTIVITY=MainEntryActivity.class;
+    private final static Class NEXT_ACTIVITY=ResultsActivity.class;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +25,10 @@ public class Question5 extends AppCompatActivity {
     }
     public void incorrect(View unused){
         //store value
+        File file = new File(getFilesDir().getPath().toString()+"/score.txt");
         FileWriter fw;
         FileReader fr;
-        File file = new File(getFilesDir().getPath().toString()+"/score.txt");
+
         char[] score;
         score = new char[5];
 
