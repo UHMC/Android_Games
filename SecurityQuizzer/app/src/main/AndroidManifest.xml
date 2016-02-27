@@ -9,6 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:screenOrientation="portrait"
             android:name=".SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
@@ -20,10 +21,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".TutorialEntryActivity"
             android:label="@string/title_activity_tutorial_entry"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".MainEntryActivity"
             android:label="@string/title_activity_main_entry"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -36,6 +39,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
+            android:screenOrientation="portrait"
             android:name=".Question1"
             android:label="@string/title_activity_question1"
             android:parentActivityName=".MainEntryActivity"
@@ -45,6 +49,7 @@
                 android:value="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity" />
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".Question2"
             android:label="@string/title_activity_question2"
             android:parentActivityName=".Question1"
@@ -54,6 +59,7 @@
                 android:value="educybersecurity.hawaii.maui.securityquizzer.Question1" />
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".Question3"
             android:label="@string/title_activity_question3"
             android:parentActivityName=".Question2"
@@ -63,6 +69,7 @@
                 android:value="educybersecurity.hawaii.maui.securityquizzer.Question2" />
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".Question4"
             android:label="@string/title_activity_question4"
             android:parentActivityName=".Question3"
@@ -72,6 +79,7 @@
                 android:value="educybersecurity.hawaii.maui.securityquizzer.Question3" />
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".Question5"
             android:label="@string/title_activity_question5"
             android:parentActivityName=".Question4"
@@ -81,6 +89,7 @@
                 android:value="educybersecurity.hawaii.maui.securityquizzer.Question4" />
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".ResultsActivity"
             android:label="@string/title_activity_results"
             android:parentActivityName=".MainEntryActivity"
