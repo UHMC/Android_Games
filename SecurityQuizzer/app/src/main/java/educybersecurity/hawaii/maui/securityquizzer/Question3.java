@@ -1,6 +1,9 @@
 package educybersecurity.hawaii.maui.securityquizzer;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,6 +17,7 @@ import java.io.FileWriter;
 public class Question3 extends AppCompatActivity {
     private final static short WHICH_QUESTION=3;
     private final static Class NEXT_ACTIVITY=Question4.class;
+    private final static String ACTION_FINISH_QUIZ="educybersecurity.hawaii.maui.securityquizzer.ACTION_FINISH_QUIZ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +26,12 @@ public class Question3 extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Question 3");
+        registerReceiver(new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                finish();
+            }
+        }, new IntentFilter(ACTION_FINISH_QUIZ));
     }
     public void incorrect(View unused){
         //store value
