@@ -29,6 +29,7 @@ public class Question3 extends AppCompatActivity {
         registerReceiver(new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
+                unregisterReceiver(this);
                 finish();
             }
         }, new IntentFilter(ACTION_FINISH_QUIZ));
