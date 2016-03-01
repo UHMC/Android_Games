@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -149,6 +150,9 @@ public class TutorialEntryActivity extends AppCompatActivity {
         if(hasFocus)makeFullscreen();
     }
     public void makeFullscreen(){
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null)actionBar.hide();
+        findViewById(R.id.appbar).setVisibility(View.GONE);
         mViewPager.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
