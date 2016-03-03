@@ -112,7 +112,7 @@ public class TutorialEntryActivity extends AppCompatActivity {
                 gestureDetector=new GestureDetectorCompat(rootView.getContext(), new GestureDetector.OnGestureListener() {
                     @Override
                     public boolean onDown(MotionEvent e) {
-                        return false;
+                        return true;
                     }
 
                     @Override
@@ -136,15 +136,21 @@ public class TutorialEntryActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-                        Log.d("GESTURE", "Flung.");
+                    public boolean onFling(MotionEvent origin, MotionEvent end, float velocityX, float velocityY) {
+                        if(origin.getRawX() > end.getRawX()){
+                            Log.d("GESTURE","origin raw value " +origin.getRawX());
+                            Log.d("GESTURE","end raw value " +end.getRawX());
+                            Log.d("GESTURE", "Flung.");
+                            return true;
+                        }
+
                         return false;
                     }
                 });
                 rootView.setOnTouchListener(new View.OnTouchListener(){
                     @Override
                     public boolean onTouch(View v, MotionEvent event) {
-                        Log.d("GESTURE","Detected touch.");
+//                        Log.d("GESTURE","Detected touch.");
                         return gestureDetector.onTouchEvent(event);
                     }
                 });
