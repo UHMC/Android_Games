@@ -1,5 +1,6 @@
 package educybersecurity.hawaii.maui.securityquizzer;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
@@ -33,7 +35,7 @@ public class TutorialEntryActivity extends AppCompatActivity {
     /**
      * The {@link ViewPager} that will host the section contents.
      */
-    private ViewPager mViewPager;
+    private InterceptedViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +49,7 @@ public class TutorialEntryActivity extends AppCompatActivity {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager = new InterceptedViewPager((ViewPager) findViewById(R.id.container));
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         makeFullscreen();
@@ -73,6 +75,19 @@ public class TutorialEntryActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public class InterceptedViewPager extends ViewPager{
+        public InterceptedViewPager(Context context){super(context);}
+        public InterceptedViewPager(Context context, AttributeSet attrs){super(context, attrs);}
+        public InterceptedViewPager(ViewPager vp){
+            super(vp.getContext());
+        }
+        @Override
+        public boolean onInterceptTouchEvent(MotionEvent ev) {
+            super.onInterceptTouchEvent(ev); // Called anyway to be safe.
+            return false; // Don't let the ViewPager intercept.
+        }
     }
 
     /**
@@ -145,7 +160,6 @@ public class TutorialEntryActivity extends AppCompatActivity {
                             Log.d("GESTURE", "Flung.");
                             return true;
                         }
-
                         return false;
                     }
                 });
