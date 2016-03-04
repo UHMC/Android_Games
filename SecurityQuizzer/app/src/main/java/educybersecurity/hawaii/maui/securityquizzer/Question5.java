@@ -1,7 +1,9 @@
 package educybersecurity.hawaii.maui.securityquizzer;
 
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -34,6 +36,20 @@ public class Question5 extends AppCompatActivity {
             }
         }, new IntentFilter(ACTION_FINISH_QUIZ));
     }
+
+
+    public void run(View unused) {
+        new AlertDialog.Builder(Question5.this)
+                .setTitle("Rubber ducky code")
+                .setMessage(R.string.Question5_code)
+                .setCancelable(false)
+                .setPositiveButton("Good luck!", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                }).create().show();
+    }
+
     public void incorrect(View unused){
         //store value
         File file = new File(getFilesDir().getPath().toString()+"/score.txt");
