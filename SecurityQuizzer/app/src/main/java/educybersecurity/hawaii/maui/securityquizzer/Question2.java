@@ -1,7 +1,9 @@
 package educybersecurity.hawaii.maui.securityquizzer;
 
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -26,6 +28,7 @@ public class Question2 extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Question 2");
+
         registerReceiver(new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
@@ -33,6 +36,19 @@ public class Question2 extends AppCompatActivity {
                 finish();
             }
         }, new IntentFilter(ACTION_FINISH_QUIZ));
+    }
+
+
+    public void run(View unused) {
+        new AlertDialog.Builder(Question2.this)
+                .setTitle("Rubber ducky code")
+                .setMessage(R.string.Question2_code)
+                .setCancelable(false)
+                .setPositiveButton("Good luck!", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                }).create().show();
     }
     public void incorrect(View unused){
         //store value

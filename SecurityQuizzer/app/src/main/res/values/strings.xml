@@ -11,5 +11,6 @@
     <string name="title_activity_question4">Question4</string>
     <string name="title_activity_question5">Question5</string>
     <string name="title_activity_results">ResultsActivity</string>
+    <string name="Question2_code">REM Hello world\nWINDOWS r\nDELAY 100\nSTRING notepad.exe\nENTER\nDELAY 200\nSTRING Hello world!</string>
 
 </resources>
