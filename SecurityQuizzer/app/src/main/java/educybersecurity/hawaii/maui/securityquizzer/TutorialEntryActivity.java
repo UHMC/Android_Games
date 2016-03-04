@@ -85,6 +85,7 @@ public class TutorialEntryActivity extends AppCompatActivity {
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
         private static final int LAST_SECTION=3;
+        private static final float THRESH_SPEED_X=1000; //pixels per second
         private GestureDetectorCompat gestureDetector;
 
         public PlaceholderFragment() {
@@ -137,9 +138,10 @@ public class TutorialEntryActivity extends AppCompatActivity {
 
                     @Override
                     public boolean onFling(MotionEvent origin, MotionEvent end, float velocityX, float velocityY) {
-                        if(origin.getRawX() > end.getRawX()){
+                        if(velocityX<-THRESH_SPEED_X){
                             Log.d("GESTURE","origin raw value " +origin.getRawX());
                             Log.d("GESTURE","end raw value " +end.getRawX());
+                            Log.d("GESTURE","velocityX: "+velocityX);
                             Log.d("GESTURE", "Flung.");
                             return true;
                         }
