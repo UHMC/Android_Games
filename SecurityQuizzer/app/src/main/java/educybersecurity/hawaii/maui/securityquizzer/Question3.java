@@ -16,7 +16,7 @@ import java.io.FileWriter;
 
 public class Question3 extends AppCompatActivity {
     private final static short WHICH_QUESTION=3;
-    private final static Class NEXT_ACTIVITY=Question4.class;
+    private final static Class NEXT_ACTIVITY=IntermediaryResults.class;
     private final static String ACTION_FINISH_QUIZ="educybersecurity.hawaii.maui.securityquizzer.ACTION_FINISH_QUIZ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
