@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ public class ResultsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_results);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        float numberCorrect = 0;
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -28,11 +30,14 @@ public class ResultsActivity extends AppCompatActivity {
 
         // Create array of TextViews
         TextView[] questionResult = new TextView[5];
+        TextView percentCorrect = new TextView(this);
+        percentCorrect = (TextView) findViewById(R.id.textView10);
         questionResult[0] = (TextView) findViewById(R.id.textView1);
         questionResult[1] = (TextView) findViewById(R.id.textView2);
         questionResult[2] = (TextView) findViewById(R.id.textView3);
         questionResult[3] = (TextView) findViewById(R.id.textView4);
         questionResult[4] = (TextView) findViewById(R.id.textView5);
+
 
         // Necessary stuff for I/O-ing score.txt
         File file = new File(getFilesDir().getPath().toString() + "/score.txt");
@@ -56,8 +61,12 @@ public class ResultsActivity extends AppCompatActivity {
                 questionResult[i].setText("Question " + question + " was incorrect, sorry!");
             } else {
                 questionResult[i].setText("Question " + question + " was correct!");
+                numberCorrect++;
             }
         }
+        float percentScore = (numberCorrect/5)*100;
+        Log.d("correct", "Number correct: " + Float.toString(numberCorrect) + "\nPercent correct: " + String.format("%.2f", percentScore) + "%");
+        percentCorrect.setText(String.format("%.1f", percentScore) + "%");
     }
     public void mainMenu(View unused){
         finish(); //finish and return to MainEntryActivity

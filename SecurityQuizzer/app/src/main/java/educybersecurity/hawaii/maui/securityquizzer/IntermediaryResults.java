@@ -66,8 +66,7 @@ public class IntermediaryResults extends AppCompatActivity {
             }
         }
         float percentScore = (numberCorrect/3)*100;
-        Log.d("correct", "Number correct: "+Float.toString(numberCorrect) + "\nPercent correct: "+String.format("%.2f", percentScore)+"%" );
-        percentCorrect.setText(String.format("%.2f", percentScore) + "%");
+        percentCorrect.setText(String.format("%.1f", percentScore) + "%");
 
 
     }

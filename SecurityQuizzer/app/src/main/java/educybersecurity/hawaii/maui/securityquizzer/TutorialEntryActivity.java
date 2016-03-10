@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class TutorialEntryActivity extends AppCompatActivity {
@@ -52,7 +53,9 @@ public class TutorialEntryActivity extends AppCompatActivity {
 
         makeFullscreen();
     }
-
+    public void mainMenu(View unused){
+        finish();
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -102,13 +105,29 @@ public class TutorialEntryActivity extends AppCompatActivity {
             fragment.setArguments(args);
             return fragment;
         }
-
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_tutorial_entry, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+            TextView content = (TextView) rootView.findViewById(R.id.content);
             int sectionNumber=getArguments().getInt(ARG_SECTION_NUMBER);
             textView.setText(getString(R.string.section_format, sectionNumber));
+            Button main = (Button) rootView.findViewById(R.id.button7);
+
+            switch(sectionNumber){
+                case 1:
+                    content.setText(getString(R.string.Tutorial_1));
+                    break;
+
+                case 2:
+                    content.setText(getString(R.string.Tutorial_2));
+                    break;
+                case 3:
+                    content.setText(getString(R.string.Tutorial_3));
+                    main.setEnabled(true);
+                    break;
+            }
+
             if(sectionNumber==LAST_SECTION){
                 gestureDetector=new GestureDetectorCompat(rootView.getContext(), new GestureDetector.OnGestureListener() {
                     @Override
@@ -203,6 +222,8 @@ public class TutorialEntryActivity extends AppCompatActivity {
         super.onWindowFocusChanged(hasFocus);
         if(hasFocus)makeFullscreen();
     }
+
+
     public void makeFullscreen(){
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null)actionBar.hide();

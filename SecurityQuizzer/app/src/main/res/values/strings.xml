@@ -13,5 +13,7 @@
     <string name="title_activity_results">ResultsActivity</string>
     <string name="Question2_code">REM Hello world\nWINDOWS r\nDELAY 100\nSTRING notepad.exe\nENTER\nDELAY 200\nSTRING Hello world!</string>
     <string name="Question5_code">GUI r\nSTRING cmd\nENTER</string>
-
+    <string name="Tutorial_1">USB Rubber Ducky\'s scripting language makes writing payloads simple. No programming experience needed.\n\nTyping \'Hello World\' is as simple as programming STRING Hello World\n\nAdd pauses in between commands with DELAY. Try DELAY 100 for short 100 milliseconds pauses or DELAY 1000 for longer 1 second pauses.\n\nCombine specials keys. ALT F4, CONTROL ESCAPE, WINDOWS R, SHIFT TAB. They all do exactly as you might expect.\n\nComment your code! Use REM just as you would in any other language.\n\nThat\'s it! You just learned Ducky Script.</string>
+    <string name="Tutorial_2">Placeholder for page 2</string>
+    <string name="Tutorial_3">Placeholder for page 3</string>
 </resources>
