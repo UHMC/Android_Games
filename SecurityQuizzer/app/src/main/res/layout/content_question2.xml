@@ -65,7 +65,6 @@
         android:layout_alignRight="@+id/button"
         android:layout_alignEnd="@+id/button"
         android:layout_alignParentLeft="true"
-        android:textSize="20sp"
         android:clickable="true"
         android:onClick="run"/>
 </RelativeLayout>
