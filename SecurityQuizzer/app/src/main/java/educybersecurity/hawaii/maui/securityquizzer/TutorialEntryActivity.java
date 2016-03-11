@@ -108,22 +108,28 @@ public class TutorialEntryActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_tutorial_entry, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             TextView content = (TextView) rootView.findViewById(R.id.content);
+            TextView title = (TextView) rootView.findViewById(R.id.tutorial_title);
             int sectionNumber=getArguments().getInt(ARG_SECTION_NUMBER);
-            textView.setText(getString(R.string.section_format, sectionNumber));
             Button main = (Button) rootView.findViewById(R.id.button7);
 
             switch(sectionNumber){
                 case 1:
                     content.setText(getString(R.string.Tutorial_1));
+                    title.setText(getString(R.string.Tutorial_title_1));
                     break;
 
                 case 2:
                     content.setText(getString(R.string.Tutorial_2));
+                    title.setText(getString(R.string.Tutorial_title_2));
                     break;
                 case 3:
                     content.setText(getString(R.string.Tutorial_3));
+                    title.setText(getString(R.string.Tutorial_title_3));
+                    break;
+                case 4:
+                    content.setText(getString(R.string.Tutorial_4));
+                    title.setText(getString(R.string.Tutorial_title_4));
                     main.setEnabled(true);
                     main.setAlpha(1.0f);
                     break;
@@ -200,8 +206,8 @@ public class TutorialEntryActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 4 total pages.
+            return 4;
         }
 
         @Override
