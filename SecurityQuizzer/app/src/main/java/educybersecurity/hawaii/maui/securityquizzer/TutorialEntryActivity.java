@@ -9,6 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
@@ -126,6 +127,7 @@ public class TutorialEntryActivity extends AppCompatActivity {
                 case 3:
                     content.setText(getString(R.string.Tutorial_3));
                     title.setText(getString(R.string.Tutorial_title_3));
+                    content.setMovementMethod(new ScrollingMovementMethod());
                     break;
                 case 4:
                     content.setText(getString(R.string.Tutorial_4));
