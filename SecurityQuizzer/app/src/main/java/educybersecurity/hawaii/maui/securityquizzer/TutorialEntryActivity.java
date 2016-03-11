@@ -125,6 +125,7 @@ public class TutorialEntryActivity extends AppCompatActivity {
                 case 3:
                     content.setText(getString(R.string.Tutorial_3));
                     main.setEnabled(true);
+                    main.setAlpha(1.0f);
                     break;
             }
 
