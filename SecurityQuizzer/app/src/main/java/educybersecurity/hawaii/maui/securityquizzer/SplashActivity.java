@@ -76,12 +76,6 @@ public class SplashActivity extends AppCompatActivity {
 
         // First time run shows preference file as false, running this block
         if(hasRun == false) {
-            Context context = getApplicationContext();
-            CharSequence text = "First time running this application!";
-            int duration = Toast.LENGTH_SHORT;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
             // Stage changes to preference file to true
             SharedPreferences.Editor editor = config.edit();
             editor.putBoolean("hasRun", true);
@@ -91,12 +85,6 @@ public class SplashActivity extends AppCompatActivity {
 
         // If preference file shows true, runs this block instead
         if(hasRun == true) {
-            Context context = getApplicationContext();
-            CharSequence text = "Application already ran!";
-            int duration = Toast.LENGTH_SHORT;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
         }
 
         //Depending on whether app has been run before,

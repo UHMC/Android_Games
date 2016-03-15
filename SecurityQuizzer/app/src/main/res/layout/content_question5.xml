@@ -46,7 +46,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Opens the Windows command prompt"
+        android:text="Open the Windows command prompt"
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
         android:layout_alignLeft="@+id/button3"
