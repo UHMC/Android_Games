@@ -1,0 +1,189 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:2:1-104:12
+	package
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:3:5-59
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:5:5-102:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:9:9-35
+	android:allowBackup
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:10:9-40
+activity#educybersecurity.hawaii.maui.securityquizzer.SplashActivity
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:11:9-22:20
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:15:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:14:13-45
+	android:configChanges
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:13:13-74
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:16:13-51
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:12:13-43
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:20:27-74
+activity#educybersecurity.hawaii.maui.securityquizzer.TutorialEntryActivity
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:23:9-27:59
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:26:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:25:13-66
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:27:13-56
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:24:13-50
+activity#educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:28:9-32:59
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:31:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:30:13-62
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:32:13-56
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:29:13-46
+meta-data#com.google.android.gms.version
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:37:9-39:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:39:13-66
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:38:13-58
+activity#educybersecurity.hawaii.maui.securityquizzer.Question1
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:41:9-50:20
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:45:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:43:13-61
+	android:parentActivityName
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:44:13-60
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:46:13-56
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:42:13-38
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:47:13-49:98
+	android:value
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:49:17-95
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:48:17-63
+activity#educybersecurity.hawaii.maui.securityquizzer.Question2
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:51:9-60:20
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:55:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:53:13-61
+	android:parentActivityName
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:54:13-52
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:56:13-56
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:52:13-38
+activity#educybersecurity.hawaii.maui.securityquizzer.Question3
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:61:9-70:20
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:65:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:63:13-61
+	android:parentActivityName
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:64:13-52
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:66:13-56
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:62:13-38
+activity#educybersecurity.hawaii.maui.securityquizzer.Question4
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:71:9-80:20
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:75:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:73:13-61
+	android:parentActivityName
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:74:13-52
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:76:13-56
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:72:13-38
+activity#educybersecurity.hawaii.maui.securityquizzer.Question5
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:81:9-90:20
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:85:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:83:13-61
+	android:parentActivityName
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:84:13-52
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:86:13-56
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:82:13-38
+activity#educybersecurity.hawaii.maui.securityquizzer.ResultsActivity
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:91:9-100:20
+	android:screenOrientation
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:95:13-49
+	android:label
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:93:13-59
+	android:parentActivityName
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:94:13-60
+	android:theme
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:96:13-56
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:92:13-44
+activity#educybersecurity.hawaii.maui.securityquizzer.IntermediaryResults
+ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:101:9-66
+	android:name
+		ADDED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml:101:19-54
+uses-sdk
+INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] /home/mercury/Source/Android_Games/SecurityQuizzer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/mercury/Source/Android_Games/SecurityQuizzer/app/src/main/AndroidManifest.xml

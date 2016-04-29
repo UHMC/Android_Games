@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="educybersecurity.hawaii.maui.securityquizzer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.TutorialEntryActivity"
+            android:label="@string/title_activity_tutorial_entry"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity"
+            android:label="@string/title_activity_main_entry"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.Question1"
+            android:label="@string/title_activity_question1"
+            android:parentActivityName="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity" />
+        </activity>
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.Question2"
+            android:label="@string/title_activity_question2"
+            android:parentActivityName="educybersecurity.hawaii.maui.securityquizzer.Question1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.Question1" />
+        </activity>
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.Question3"
+            android:label="@string/title_activity_question3"
+            android:parentActivityName="educybersecurity.hawaii.maui.securityquizzer.Question2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.Question2" />
+        </activity>
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.Question4"
+            android:label="@string/title_activity_question4"
+            android:parentActivityName="educybersecurity.hawaii.maui.securityquizzer.Question3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.Question3" />
+        </activity>
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.Question5"
+            android:label="@string/title_activity_question5"
+            android:parentActivityName="educybersecurity.hawaii.maui.securityquizzer.Question4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.Question4" />
+        </activity>
+        <activity
+            android:name="educybersecurity.hawaii.maui.securityquizzer.ResultsActivity"
+            android:label="@string/title_activity_results"
+            android:parentActivityName="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="educybersecurity.hawaii.maui.securityquizzer.MainEntryActivity" />
+        </activity>
+        <activity android:name="educybersecurity.hawaii.maui.securityquizzer.IntermediaryResults" />
+    </application>
+
+</manifest>
